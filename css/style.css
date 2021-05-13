@@ -1,0 +1,338 @@
+* {
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+p {
+  color: #878986;
+  font-size: 16px;
+  line-height: 34px;
+  font-weight: 500;
+}
+
+button {
+  margin: 2%;
+}
+
+/* Headings */
+.heading h2 {
+  font-family: 'Sue Ellen Francisco', cursive;
+  font-size: 60px;
+  color: #404a3d;
+}
+
+.heading h5 {
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 25px;
+  color: #5b8c51;
+}
+
+/* About */
+#about .about {
+  margin: 3%;
+  padding: 3%;
+}
+
+/* About Headings */
+#about .icons_row h6 {
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 22px;
+  margin-left: 20px;
+  color: #404a3d;
+}
+
+#about .about_imgs_middle h4 {
+  text-align: center;
+  margin-top: 30%;
+  margin-bottom: 15%;
+  font-size: 40px;
+}
+
+/* About Images */
+#about .about .branch_icon img {
+  height: 3rem;
+  width: auto;
+  transform: rotate(40deg);
+}
+
+#about .about_content img {
+  height: 27rem;
+  width: auto;
+  border-radius: 10px;
+}
+
+#about .icons_row img {
+  height: 5rem;
+  margin-right: 3%;
+  color: #5f8f55;
+}
+
+#about .about_imgs img {
+  height: 25rem;
+  width: auto;
+  margin: 0% 4%;
+}
+
+#about .about_imgs {
+  margin: 3% 0%;
+}
+
+#about .about_content {
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+#about .icons_row {
+  margin: 5% 0%;
+}
+
+#about .about_imgs_middle {
+  /* background-color: #B0E17E; */
+  border: 1px solid #B0E17E;
+  border-radius: 50%;
+  font-family: 'Sue Ellen Francisco', cursive;
+}
+
+/* xx About xx */
+/* Team */
+#team {
+  background-color: #f5f0e9;
+  padding: 3%;
+}
+
+/* Team headings */
+#team .heading {
+  text-align: center;
+}
+
+#team .content h1, #team .content h6 {
+  color: #fff;
+}
+
+/* Team Images */
+#team .branch_icon img {
+  height: 3rem;
+  width: auto;
+  transform: rotate(40deg);
+  margin-bottom: 2%;
+}
+
+/* Team Card */
+.img-card {
+  width: 80%;
+  max-width: auto;
+  height: 20rem;
+  margin: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(239, 79, 79, 0.2);
+}
+
+.img-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 20rem;
+  transform: translateY(-100%);
+  transition: all 0.7s;
+  background-color: #ef4f4f;
+  cursor: pointer;
+}
+
+.img-card img {
+  width: auto;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(-100%);
+  transition: all 0.7s;
+  background-color: rgba(239, 79, 79, 0.7);
+}
+
+.content h2, .content p {
+  opacity: 0;
+  transition: all 0.3s;
+  color: #fff;
+}
+
+.content h2 {
+  letter-spacing: 1px;
+}
+
+.content p {
+  font-size: 12px;
+}
+
+.img-card:hover::before {
+  transform: translateY(95%);
+}
+
+.img-card:hover .content {
+  transform: none;
+}
+
+.img-card:hover h2, .img-card:hover p {
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+
+/* xx Team Card xx */
+/* xx Team xx */
+/* Services */
+#services {
+  background-color: #f5f0e9;
+  padding: 3%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+/* Services Images */
+#services .branch_icon img {
+  height: 3rem;
+  width: auto;
+  transform: rotate(40deg);
+  margin-bottom: 2%;
+}
+
+/* Services card */
+#services .card {
+  height: 15rem;
+}
+
+#services .card-title {
+  padding: 5%;
+}
+
+/* Services_2 */
+#services_2 {
+  background-color: #fff;
+  padding: 4%;
+  text-align: center;
+}
+
+#services_2 h2 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+#services_2 .services_2col1 {
+  background-color: #5b8c51;
+  padding: 4% 0%;
+  margin-top: 4%;
+  border-radius: 10px;
+}
+
+#services_2 .services_2col2 {
+  background-color: #5b8c51;
+  padding: 4% 0%;
+  margin-top: 4%;
+  border-radius: 10px;
+}
+
+#services_2 .branch_icon img {
+  height: 3rem;
+  width: auto;
+  transform: rotate(40deg);
+}
+
+/* xx Services xx */
+/* Mobile View */
+@media only screen and (max-width:1026px) {
+
+  /* About */
+  #about {
+    text-align: center;
+  }
+
+  #about .about_content img {
+    height: 20rem;
+    width: auto;
+    margin: 2% 4%;
+  }
+
+  #about .icons_row img {
+    height: 5rem;
+    margin-right: 0%;
+  }
+
+  #about .about_imgs_middle h4 {
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    font-size: 40px;
+  }
+
+  #about .icons_row .icon_wrap {
+    margin: 4% 0%;
+  }
+
+  #about .about_imgs_middle {
+    background-color: #fff;
+    border: 1px solid #404a3d;
+    border-radius: 5%;
+    font-family: 'Sue Ellen Francisco', cursive;
+    padding: 0%;
+    margin: 3% 0%;
+  }
+
+  /* Team */
+  #team {
+    align-items: center;
+  }
+
+  .img-card {
+    width: 53%;
+    margin: 3% 20%;
+  }
+
+  /* Services  */
+  #services .card1 {
+    margin: 0% 0% 23%;
+  }
+
+  #services .card2 {
+    margin: 23% 0%;
+  }
+
+  #services .card3 {
+    margin: 23% 0%;
+  }
+
+  #services .card4 {
+    margin: 23% 0%;
+  }
+
+  #services .card img {
+    height: 12rem;
+    width: auto;
+    border-radius: 10px;
+  }
+
+  #services .card-title {
+    padding: 2%;
+  }
+
+  #services_2 {
+    margin: 0% 2%;
+  }
+}
